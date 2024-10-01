@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Color Change</title>
+    <style>
+        #colorButton {
+            padding: 10px 20px;
+            background-color: lightblue;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <button id="colorButton" onclick="changeColor()">Click Me!</button>
+
+    </center>
+    <script>
+        function changeColor() {
+            var button = document.getElementById("colorButton");
+            button.style.backgroundColor = button.style.backgroundColor === 'lightblue' ? 'lightgreen' : 'lightblue';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.gallery img {
+    cursor: pointer;
+    width: 100px;
+    height: auto;
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease;
+    
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+#large-image-container {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#large-image {
+    max-width: 80%;
+    height: auto;
+}
